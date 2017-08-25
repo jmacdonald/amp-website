@@ -53,3 +53,13 @@ a {
     inset 0 0 20px 1px rgba(0, 0, 0, 0.7);
   color: #EEE;
 }
+
+.feature > .icon {
+  display: inline-block;
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin-bottom: 20px;
+}
