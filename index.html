@@ -10,6 +10,7 @@
 
     <!-- Amp styles -->
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/terminal.css">
 
     <!-- IcoMoon icons -->
     <link rel="stylesheet" href="styles/icomoon.css">
@@ -19,20 +20,44 @@
       <div class="row hero">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-4">
-            </div>
+            <div class="col-8">
+              <div class="terminal">
+                <div class="title-bar">amp</div>
+                <div class="content">
+                  <pre class="line-numbers">
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre>
+        <pre class="code">
+<span class="yellow">pub struct</span> <span class="magenta">Buffer</span> {
+    <span class="yellow">pub</span> <span class="blue">id</span>: <span class="magenta">Option</span>&lt;<span class="magenta">usize</span>&gt;,
+<span class="highlight">    <span class="blue">data</span>: <span class="magenta">Rc</span>&lt;<span class="magenta">RefCell</span>&lt;<span class="magenta">GapBuffer</span>&gt;&gt;,<span class="cursor">&vert;</span></span>
+    <span class="yellow">pub</span> <span class="blue">path</span>: <span class="magenta">Option</span>&lt;<span class="magenta">PathBuf</span>&gt;,
+    <span class="yellow">pub</span> <span class="blue">cursor</span>: <span class="magenta">Cursor</span>,
+    <span class="blue">history</span>: <span class="magenta">History</span>,
+    <span class="blue">operation_group</span>: <span class="magenta">Option</span>&lt;<span class="magenta">OperationGroup</span>&gt;,
+    <span class="yellow">pub</span> <span class="blue">syntax_definition</span>: <span class="magenta">Option</span>&lt;<span class="magenta">SyntaxDefinition</span>&gt;,
+}
 
-            <div class="col-3">
-              <h5>
-                A feature-rich text
-                <br>
-                editor for your terminal.
-              </h5>
+<span class="yellow">impl</span> <span class="magenta">Buffer</span> {
+    <span class="yellow">pub fn </span><span class="blue">new</span>() -> <span class="magenta">Buffer</span> {
+</pre>
+                  <pre class="mode"> NORMAL </pre>
+                  <pre class="file-name"> amp.rs </pre>
+                  <pre class="git-status">[ok]</pre>
+                </div>
+              </div>
 
-              <p>
-                <a href="https://github.com/jmacdonald/amp" class="btn btn-primary">Install</a>
-                <a href="https://github.com/jmacdonald/amp" class="btn btn-secondary">Learn More</a>
-              </p>
+              <h1 class="center">A feature-rich text editor for your terminal.</h1>
             </div>
           </div>
         </div>
