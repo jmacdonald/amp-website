@@ -91,7 +91,7 @@ pre .highlight {
 }
 
 .terminal .mode {
-  background-color: var(--base01);
+  background-color: var(--green);
   color: var(--base03);
   float: left;
 }
