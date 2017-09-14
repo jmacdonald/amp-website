@@ -40,12 +40,13 @@ a {
   margin-bottom: 100px;
 }
 
-.feature > .icon {
-  display: inline-block;
-  font-size: 64px;
-  margin-bottom: 10px;
+.feature .icon {
+  float:left;
+  font-size: 48px;
+  margin-right: 20px;
 }
 
-h4 {
+.feature > h2 {
+  line-height: 47px;
   margin-bottom: 20px;
 }
