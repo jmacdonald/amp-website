@@ -28,10 +28,6 @@ a {
   padding: 0 30px;
 }
 
-.feature:nth-child(n + 2) {
-  border-left: 1px solid #3b4654;
-}
-
 .center {
   text-align: center;
 }
@@ -42,16 +38,6 @@ a {
 
 .hero {
   margin-bottom: 100px;
-}
-
-.dark {
-  background-color: #343e4b;
-  border: 2px solid rgba(0, 0, 0, 0.8);
-  border-width: 1px 0;
-  box-shadow:
-    0 -1px 4px 3px white,
-    inset 0 0 20px 1px rgba(0, 0, 0, 0.7);
-  color: #EEE;
 }
 
 .feature > .icon {
