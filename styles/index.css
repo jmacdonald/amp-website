@@ -58,6 +58,10 @@ a {
   padding: 0 30px;
 }
 
+.feature .title {
+  white-space: nowrap;
+}
+
 .center {
   text-align: center;
 }
