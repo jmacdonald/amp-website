@@ -31,10 +31,13 @@ a {
   margin: 10px 0 0 20px;
   padding: 5px 3px 5px 9px;
   text-align: center;
+  transition: .15s;
   white-space: nowrap;
 }
 
 .button:hover {
+  background-color: black;
+  color: white !important;
   font-weight: bold;
   text-decoration: none;
 }
