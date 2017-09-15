@@ -33,111 +33,100 @@
         </div>
       </div>
 
-      <div class="row hero">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-8">
-              <div class="terminal">
-                <div class="title-bar">amp</div>
-                <div class="content">
-                  <pre class="line-numbers">
- 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
+      <div class="row hero justify-content-center">
+        <div class="col-8">
+          <div class="terminal">
+            <div class="title-bar">amp</div>
+            <div class="content">
+              <pre class="line-numbers">
+1
+2
+3
+4
+5
+6
+7
+8
+9
 10
 11
 12</pre>
-        <pre class="code">
+    <pre class="code">
 <span class="yellow">pub struct</span> <span class="magenta">Buffer</span> {
-    <span class="yellow">pub</span> <span class="blue">id</span>: <span class="magenta">Option</span>&lt;<span class="magenta">usize</span>&gt;,
+<span class="yellow">pub</span> <span class="blue">id</span>: <span class="magenta">Option</span>&lt;<span class="magenta">usize</span>&gt;,
 <span class="highlight">    <span class="blue">data</span>: <span class="magenta">Rc</span>&lt;<span class="magenta">RefCell</span>&lt;<span class="magenta">GapBuffer</span>&gt;&gt;,<span class="cursor">&vert;</span></span>
-    <span class="yellow">pub</span> <span class="blue">path</span>: <span class="magenta">Option</span>&lt;<span class="magenta">PathBuf</span>&gt;,
-    <span class="yellow">pub</span> <span class="blue">cursor</span>: <span class="magenta">Cursor</span>,
-    <span class="blue">history</span>: <span class="magenta">History</span>,
-    <span class="blue">operation_group</span>: <span class="magenta">Option</span>&lt;<span class="magenta">OperationGroup</span>&gt;,
-    <span class="yellow">pub</span> <span class="blue">syntax_definition</span>: <span class="magenta">Option</span>&lt;<span class="magenta">SyntaxDefinition</span>&gt;,
+<span class="yellow">pub</span> <span class="blue">path</span>: <span class="magenta">Option</span>&lt;<span class="magenta">PathBuf</span>&gt;,
+<span class="yellow">pub</span> <span class="blue">cursor</span>: <span class="magenta">Cursor</span>,
+<span class="blue">history</span>: <span class="magenta">History</span>,
+<span class="blue">operation_group</span>: <span class="magenta">Option</span>&lt;<span class="magenta">OperationGroup</span>&gt;,
+<span class="yellow">pub</span> <span class="blue">syntax_definition</span>: <span class="magenta">Option</span>&lt;<span class="magenta">SyntaxDefinition</span>&gt;,
 }
 
 <span class="yellow">impl</span> <span class="magenta">Buffer</span> {
-    <span class="yellow">pub fn </span><span class="blue">new</span>() -> <span class="magenta">Buffer</span> {
+<span class="yellow">pub fn </span><span class="blue">new</span>() -> <span class="magenta">Buffer</span> {
 </pre>
-                  <pre class="mode"> INSERT </pre>
-                  <pre class="file-name"> amp.rs </pre>
-                  <pre class="git-status">[ok]</pre>
-                </div>
-              </div>
-
-              <h1 class="center">A feature-rich text editor for your terminal.</h1>
+              <pre class="mode"> INSERT </pre>
+              <pre class="file-name"> amp.rs </pre>
+              <pre class="git-status">[ok]</pre>
             </div>
           </div>
+
+          <h1 class="center">A feature-rich text editor for your terminal.</h1>
         </div>
       </div>
-      <div class="row features">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-3 feature">
-              <h2>
-                <span class="icon icon-gift"></span>
-                Feature Packed
-              </h2>
 
-              <p>
-                Everything you need to get started: syntax highlighting, file finder, symbol jump, basic Git integration, and more!
-              </p>
-            </div>
+      <div class="row features justify-content-center">
+        <div class="col-sm-3 feature">
+          <h2>
+            <span class="icon icon-gift"></span>
+            Feature Packed
+          </h2>
 
-            <div class="col-3 feature">
-              <h2>
-                <span class="icon icon-terminal"></span>
-                Text-based UI
-              </h2>
+          <p>
+            Everything you need to get started: syntax highlighting, file finder, symbol jump, basic Git integration, and more!
+          </p>
+        </div>
 
-              <p>
-                Built to sit inside your terminal, or on a server.
-                It pairs incredibly well with tmux.
-              </p>
-            </div>
+        <div class="col-sm-3 feature">
+          <h2>
+            <span class="icon icon-terminal"></span>
+            Text-based UI
+          </h2>
 
-            <div class="col-3 feature">
-              <h2>
-                <span class="icon icon-magic-wand"></span>
-                Expressive
-              </h2>
+          <p>
+            Built to sit inside your terminal, or on a server.
+            It pairs incredibly well with tmux.
+          </p>
+        </div>
 
-              <p>
-                A modal, keyboard-driven interface that makes
-                navigation and editing easier than you'd expect.
-              </p>
-            </div>
+        <div class="col-sm-3 feature">
+          <h2>
+            <span class="icon icon-magic-wand"></span>
+            Expressive
+          </h2>
 
-            <div class="col-3 feature">
-              <h2>
-                <span class="icon icon-leaf"></span>
-                Lightweight
-              </h2>
+          <p>
+            A modal, keyboard-driven interface that makes
+            navigation and editing easier than you'd expect.
+          </p>
+        </div>
 
-              <p>
-                Written in <a href="https://rust-lang.org">Rust</a>, a
-                low-level, high-performance language without garbage collection.
-              </p>
-            </div>
-          </div>
+        <div class="col-sm-3 feature">
+          <h2>
+            <span class="icon icon-leaf"></span>
+            Lightweight
+          </h2>
+
+          <p>
+            Written in <a href="https://rust-lang.org">Rust</a>, a
+            low-level, high-performance language without garbage collection.
+          </p>
         </div>
       </div>
 
       <div class="row">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              &copy; 2015-2017 Jordan MacDonald
-            </div>
-          </div>
+        <div class="col-12">
+          &copy; 2015-2017 Jordan MacDonald
         </div>
       </div>
     </div>
