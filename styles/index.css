@@ -55,7 +55,12 @@ a {
 }
 
 .feature {
-  padding: 0 30px;
+  padding: 15px 30px;
+}
+
+.feature > h2 {
+  line-height: 47px;
+  margin-bottom: 5px;
 }
 
 .feature .title {
@@ -82,11 +87,6 @@ a {
 
 .icon-gift {
   margin-top: -7px;
-}
-
-.feature > h2 {
-  line-height: 47px;
-  margin-bottom: 20px;
 }
 
 .footer {
