@@ -24,6 +24,13 @@ a {
 
 /* Custom classes */
 
+.header {
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 7px;
+  padding-top: 10px;
+  margin: 0;
+}
+
 .feature {
   padding: 0 30px;
 }
