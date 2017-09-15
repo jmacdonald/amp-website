@@ -43,7 +43,15 @@ a {
 .feature .icon {
   float:left;
   font-size: 48px;
-  margin-right: 20px;
+  margin-right: 15px;
+}
+
+.icon-gift {
+  margin-top: -7px;
+}
+
+.icon-rocket {
+  margin-top: 2px;
 }
 
 .feature > h2 {
