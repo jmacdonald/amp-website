@@ -24,6 +24,20 @@ a {
 
 /* Custom classes */
 
+.button {
+  border: 1px solid black;
+  border-radius: 3px;
+  color: black;
+  margin: 10px 0 0 20px;
+  padding: 5px 3px 5px 9px;
+  text-align: center;
+}
+
+.button:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .header {
   font-family: 'Quicksand', sans-serif;
   letter-spacing: 7px;
@@ -36,18 +50,7 @@ a {
 }
 
 .header .links a {
-  border: 1px solid black;
-  border-radius: 3px;
-  color: black;
   float: right;
-  margin: 10px 0 0 20px;
-  padding: 5px 3px 5px 9px;
-  text-align: center;
-}
-
-.header .links a:hover {
-  font-weight: bold;
-  text-decoration: none;
 }
 
 .feature {
