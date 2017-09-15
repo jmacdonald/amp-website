@@ -38,9 +38,12 @@ a {
   text-decoration: none;
 }
 
-.header {
+.alt-font {
   font-family: 'Quicksand', sans-serif;
   letter-spacing: 7px;
+}
+
+.header {
   padding-top: 10px;
   margin: 0;
   margin-bottom: 30px;
