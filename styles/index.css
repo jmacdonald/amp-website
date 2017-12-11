@@ -24,6 +24,11 @@ a {
 
 /* Custom classes */
 
+.logo {
+  padding: 10px;
+  width: 120px;
+}
+
 .button {
   border: 1px solid black;
   border-radius: 3px;
@@ -76,10 +81,6 @@ a {
 
 .center {
   text-align: center;
-}
-
-.row img {
-  border: 1px solid #333;
 }
 
 .hero {
