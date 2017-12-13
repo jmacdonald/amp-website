@@ -39,7 +39,6 @@ a {
   border: 1px solid black;
   border-radius: 3px;
   color: black !important;
-  margin: 10px 0 0 20px;
   padding: 5px 3px 5px 9px;
   text-align: center;
   transition: .15s;
@@ -63,12 +62,9 @@ a {
   margin-bottom: 30px;
 }
 
-.header .links {
-  float: right;
-}
-
 .header .links a {
   float: right;
+  margin: 16px 0 0 14px;
 }
 
 .feature {
