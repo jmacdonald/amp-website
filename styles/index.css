@@ -31,8 +31,9 @@ a {
 /* Custom classes */
 
 .logo {
-  padding: 10px;
-  width: 120px;
+  display: block;
+  margin: auto;
+  width: 160px;
 }
 
 .button {
@@ -62,11 +63,6 @@ a {
   margin-bottom: 30px;
 }
 
-.header .links a {
-  float: right;
-  margin: 16px 0 0 14px;
-}
-
 .feature {
   padding: 15px 30px;
   text-align: center;
@@ -86,7 +82,20 @@ a {
 }
 
 .hero {
-  margin-bottom: 60px;
+  margin: 60px 0;
+}
+
+.hero .title {
+  margin-top: 40px;
+}
+
+.hero .title h3 {
+  margin-top: 20px;
+}
+
+.hero a.button {
+  display: inline-block;
+  margin: 25px 0 0 14px;
 }
 
 .feature .icon {
