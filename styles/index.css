@@ -5,6 +5,10 @@ body {
 }
 
 a {
+  color: #a33;
+}
+
+a:hover {
   color: #c33;
 }
 
@@ -34,22 +38,6 @@ a {
   display: block;
   margin: auto;
   width: 160px;
-}
-
-.button {
-  border: 1.6px solid black;
-  border-radius: 3px;
-  color: black !important;
-  padding: 5px 3px 5px 9px;
-  text-align: center;
-  transition: .15s;
-  white-space: nowrap;
-}
-
-.button:hover {
-  background-color: black;
-  color: white !important;
-  text-decoration: none;
 }
 
 .alt-font {
@@ -93,9 +81,24 @@ a {
   margin-top: 20px;
 }
 
-.hero a.button {
-  display: inline-block;
-  margin: 25px 0 0 14px;
+.hero a:hover {
+  text-decoration: none;
+}
+
+.hero .links {
+  margin-top: 15px;
+}
+
+.hero .icon {
+  font-size: 14px;
+}
+
+.hero a:nth-child(n-1) {
+  margin-right: 5px;
+}
+
+.hero a:nth-child(n+1) {
+  margin-left: 5px;
 }
 
 .feature .icon {
@@ -125,10 +128,6 @@ a {
 .cta {
   margin: 70px 0;
   text-align: center;
-}
-
-.cta .button {
-  padding: 15px 13px 15px 19px;
 }
 
 .footer {
