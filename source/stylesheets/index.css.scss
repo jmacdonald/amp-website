@@ -18,56 +18,61 @@
 .feature {
   padding: 15px 30px;
   text-align: center;
-}
 
-.feature > h2 {
-  line-height: 47px;
-  margin-bottom: 5px;
-}
+  & > h2 {
+    line-height: 47px;
+    margin-bottom: 5px;
+  }
 
-.feature .title {
-  white-space: nowrap;
-}
+  .title {
+    white-space: nowrap;
+  }
 
-.center {
-  text-align: center;
+  .icon {
+    font-size: 48px;
+    position: relative;
+  }
 }
 
 .hero {
   margin: 60px 0;
-}
 
-.hero .title {
-  margin-top: 40px;
-}
+  .title {
+    margin-top: 40px;
 
-.hero .title h3 {
-  margin-top: 20px;
-}
+    h3 {
+      margin-top: 20px;
+    }
+  }
 
-.hero a:hover {
-  text-decoration: none;
-}
+  .links {
+    margin-top: 15px;
 
-.hero .links {
-  margin-top: 15px;
-}
+    a {
+      display: inline-block;
+    }
+  }
 
-.hero .icon {
-  font-size: 14px;
-}
+  .icon {
+    font-size: 14px;
+  }
 
-.hero a:nth-child(n-1) {
-  margin-right: 5px;
-}
+  a {
+    color: #a33;
 
-.hero a:nth-child(n+1) {
-  margin-left: 5px;
-}
+    &:hover {
+      color: #c33;
+      text-decoration: none;
+    }
 
-.feature .icon {
-  font-size: 48px;
-  position: relative;
+    &:nth-child(n-1) {
+      margin-right: 5px;
+    }
+
+    &:nth-child(n+1) {
+      margin-left: 5px;
+    }
+  }
 }
 
 .icon-gift {
