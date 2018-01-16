@@ -12,5 +12,8 @@ RUN gem install bundler && bundle
 # Middleman's server port
 EXPOSE 4567
 
+# LiveReload port
+EXPOSE 4568
+
 # Run the development server by default
 CMD middleman server
