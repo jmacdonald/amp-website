@@ -2,6 +2,10 @@ FROM ruby:2.5-slim
 
 WORKDIR /app
 
+# Allow Bundler exception groups using a "without" build argument
+ARG without
+ENV BUNDLE_WITHOUT $without
+
 # System library dependencies
 RUN apt-get update && apt-get install -y build-essential nodejs git
 

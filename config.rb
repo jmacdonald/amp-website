@@ -45,4 +45,6 @@ page '/*.txt', layout: false
 #   activate :minify_javascript
 # end
 
-activate :livereload, host: "0.0.0.0", port: 4568
+unless ENV['BUNDLE_WITHOUT'] == 'development'
+  activate :livereload, host: "0.0.0.0", port: 4568
+end
