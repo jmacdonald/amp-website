@@ -46,5 +46,6 @@ page '/*.txt', layout: false
 # end
 
 unless ENV['BUNDLE_WITHOUT'] == 'development'
+  require 'middleman-livereload'
   activate :livereload, host: "0.0.0.0", port: 4568
 end
