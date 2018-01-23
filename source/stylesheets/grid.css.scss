@@ -1,0 +1,64 @@
+@import "neat";
+
+$full-grid: (
+  media: 850px
+);
+
+$medium-grid: (
+  media: 675px
+);
+
+$collapsed-grid: (
+  media: 0px
+);
+
+.hero {
+  @include grid-container();
+
+  .terminal {
+    @include grid-media($collapsed-grid) {
+      @include grid-column(12);
+    };
+
+    @include grid-media($medium-grid) {
+      @include grid-column(6);
+      @include grid-push(1);
+    };
+  }
+
+  .title {
+    @include grid-media($collapsed-grid) {
+      @include grid-column(12);
+    };
+
+    @include grid-media($medium-grid) {
+      @include grid-column(4);
+    };
+  }
+}
+
+.features {
+  @include grid-container();
+
+  .feature {
+    @include grid-media($collapsed-grid) {
+      @include grid-column(12);
+    };
+
+    @include grid-media($medium-grid) {
+      @include grid-column(6);
+    };
+
+    @include grid-media($full-grid) {
+      @include grid-column(3);
+    };
+  }
+}
+
+.footer {
+  @include grid-container();
+
+  .copyright {
+    @include grid-column(12);
+  }
+}

@@ -9,14 +9,7 @@
   letter-spacing: 7px;
 }
 
-.header {
-  padding-top: 10px;
-  margin: 0;
-  margin-bottom: 30px;
-}
-
 .feature {
-  padding: 15px 30px;
   text-align: center;
 
   & > h2 {
@@ -98,12 +91,7 @@
   top: 4px;
 }
 
-.cta {
-  margin: 70px 0;
-  text-align: center;
-}
-
 .footer {
-  margin: 30px 0;
-  padding-top: 20px;
+  text-align: center;
+  margin: 50px;
 }
