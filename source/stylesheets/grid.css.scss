@@ -37,10 +37,10 @@ $collapsed-grid: (
   }
 }
 
-.features {
+.highlights {
   @include grid-container();
 
-  .feature {
+  .highlight {
     @include grid-media($collapsed-grid) {
       @include grid-column(12);
     };
