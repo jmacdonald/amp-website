@@ -12,6 +12,10 @@ $collapsed-grid: (
   media: 0px
 );
 
+$neat-grid: (
+  gutter: 40px
+);
+
 .hero {
   @include grid-container();
 
@@ -37,10 +41,10 @@ $collapsed-grid: (
   }
 }
 
-.highlights {
+.highlights, .features {
   @include grid-container();
 
-  .highlight {
+  .highlight, .feature {
     @include grid-media($collapsed-grid) {
       @include grid-column(12);
     };
