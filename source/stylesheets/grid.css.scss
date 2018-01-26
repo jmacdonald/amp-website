@@ -37,10 +37,14 @@ $neat-grid: (
     };
 
     @include grid-media($medium-grid) {
+      margin-top: 0;
+
       @include grid-column(12);
     };
 
     @include grid-media($full-grid) {
+      margin-top: 45px;
+
       @include grid-column(4);
     };
   }
