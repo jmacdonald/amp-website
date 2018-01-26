@@ -56,6 +56,8 @@ $neat-grid: (
 
     @include grid-media($medium-grid) {
       @include grid-column(6);
+
+      height: 185px;
     };
 
     @include grid-media($full-grid) {
