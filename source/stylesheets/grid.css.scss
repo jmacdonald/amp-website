@@ -21,10 +21,11 @@ $neat-grid: (
 
   .terminal {
     @include grid-media($collapsed-grid) {
-      @include grid-column(12);
+      display: none;
     };
 
-    @include grid-media($medium-grid) {
+    @include grid-media($full-grid) {
+      display: block;
       @include grid-column(6);
       @include grid-push(1);
     };
@@ -36,6 +37,10 @@ $neat-grid: (
     };
 
     @include grid-media($medium-grid) {
+      @include grid-column(12);
+    };
+
+    @include grid-media($full-grid) {
       @include grid-column(4);
     };
   }
