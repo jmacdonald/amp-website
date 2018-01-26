@@ -3,91 +3,94 @@ title: Amp - A complete text editor for your terminal
 ---
 
 .hero
-  == partial "terminal"
-  .title
-    img.logo src="images/logo.svg"
-    h3.center A complete text editor for your terminal.
+  .container
+    == partial "terminal"
+    .title
+      img.logo src="images/logo.svg"
+      h3.center A complete text editor for your terminal.
 
-    .center.links
-      a href="https://amp.rs/docs/installation"
-        span.icon.icon-download
-        | Install v0.3.2
+      .center.links
+        a href="https://amp.rs/docs/installation"
+          span.icon.icon-download
+          | Install v0.3.2
 
-      a href="https://amp.rs/docs"
-        span.icon.icon-book
-        | Documentation
+        a href="https://amp.rs/docs"
+          span.icon.icon-book
+          | Documentation
 
-      a href="https://github.com/jmacdonald/amp"
-        span.icon.icon-github
-        | Github
+        a href="https://github.com/jmacdonald/amp"
+          span.icon.icon-github
+          | Github
 
 .highlights
-  .highlight
-    h2
-      span.icon.icon-gift
-      span.title Feature Packed
+  .container
+    .highlight
+      h2
+        span.icon.icon-gift
+        span.title Feature Packed
 
-    p Everything you need to get started without any configuration. A completely
-      usable editor, right out of the box.
+      p Everything you need to get started without any configuration. A completely
+        usable editor, right out of the box.
 
-  .highlight
-    h2
-      span.icon.icon-terminal
-      span.title Text-based UI
+    .highlight
+      h2
+        span.icon.icon-terminal
+        span.title Text-based UI
 
-    p Built to run inside your terminal or on a server. No heavy web-based UI.
-      Pairs incredibly well with <a href="https://github.com/jwilm/alacritty">
-      Alacritty</a> and <a href="https://tmux.github.io">tmux</a>.
+      p Built to run inside your terminal or on a server. No heavy web-based UI.
+        Pairs incredibly well with <a href="https://github.com/jwilm/alacritty">
+        Alacritty</a> and <a href="https://tmux.github.io">tmux</a>.
 
-  .highlight
-    h2
-      span.icon.icon-magic-wand
-      span.title Expressive
+    .highlight
+      h2
+        span.icon.icon-magic-wand
+        span.title Expressive
 
-    p A modal, keyboard-driven interface inspired by <a href="http://vim.org">Vim</a>
-      that makes navigating and editing text <em>fast</em>.
+      p A modal, keyboard-driven interface inspired by <a href="http://vim.org">Vim</a>
+        that makes navigating and editing text <em>fast</em>.
 
-  .highlight
-    h2
-      span.icon.icon-leaf
-      span.title Lightweight
+    .highlight
+      h2
+        span.icon.icon-leaf
+        span.title Lightweight
 
-    p Written in <a href="https://rust-lang.org">Rust</a>, a modern, low-level,
-      high-performance language without garbage collection.
+      p Written in <a href="https://rust-lang.org">Rust</a>, a modern, low-level,
+        high-performance language without garbage collection.
 
 .features
-  h1 Features
-  p.summary No plug-ins, zero configuration. All the essentials included by default.
+  .container
+    h1 Features
+    p.summary No plug-ins, zero configuration. All the essentials included by default.
 
-  .feature
-    h2
-      span.title File Finder
+    .feature
+      h2
+        span.title File Finder
 
-    p Quickly indexes and finds files using a simple, accurate matching algorithm.
-      Ignores git directories by default; easily configurable to your own liking,
-      if you must.
+      p Quickly indexes and finds files using a simple, accurate matching algorithm.
+        Ignores git directories by default; easily configurable to your own liking,
+        if you must.
 
-  .feature
-    h2
-      span.title Easy Movement
+    .feature
+      h2
+        span.title Easy Movement
 
-    p Fast, precise cursor movement without repetitive keystrokes or fancy
-      expressions. Look where you'd like to move, and type the token.
-      That's it.
+      p Fast, precise cursor movement without repetitive keystrokes or fancy
+        expressions. Look where you'd like to move, and type the token.
+        That's it.
 
-  .feature
-    h2
-      span.title Symbol Jump
+    .feature
+      h2
+        span.title Symbol Jump
 
-    p Move to any class, struct, or method definition within the current buffer. Easily
-      augment the default set of supported languages using the .sublime-syntax format.
+      p Move to any class, struct, or method definition within the current buffer. Easily
+        augment the default set of supported languages using the .sublime-syntax format.
 
-  .feature
-    h2
-      span.title Flexible Keymaps
+    .feature
+      h2
+        span.title Flexible Keymaps
 
-    p Simple YAML-based key mappings with the ability to compose multiple built-in
-      commands into new, custom macros.
+      p Simple YAML-based key mappings with the ability to compose multiple built-in
+        commands into new, custom macros.
 
 h1.cta
   a href="https://amp.rs/docs/installation"
