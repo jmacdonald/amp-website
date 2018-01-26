@@ -1,3 +1,6 @@
+$red: #a33;
+$bright_red: #c33;
+
 body {
   font-family: 'Open Sans Condensed', sans-serif;
   margin: 0;
@@ -13,5 +16,10 @@ h1, h2, h3, h4, h5 {
 }
 
 a {
+  color: $red;
   text-decoration: none;
+
+  &:hover {
+    color: $bright_red;
+  }
 }

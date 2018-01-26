@@ -37,13 +37,6 @@
   }
 
   a {
-    color: #a33;
-
-    &:hover {
-      color: #c33;
-      text-decoration: none;
-    }
-
     &:nth-child(n-1) {
       margin-right: 5px;
     }
@@ -67,49 +60,49 @@
     margin-top: 5px;
     margin-bottom: 40px;
   }
-}
 
-.highlight, .feature {
-  text-align: center;
+  .highlight, .feature {
+    text-align: center;
 
-  & > h2 {
-    line-height: 47px;
-    margin-bottom: 5px;
+    & > h2 {
+      line-height: 47px;
+      margin-bottom: 5px;
+    }
+
+    .title {
+      white-space: nowrap;
+    }
+
+    .icon {
+      font-size: 42px;
+      position: relative;
+      margin-right: 10px;
+    }
+
+    p {
+      text-align: justify;
+    }
   }
 
-  .title {
-    white-space: nowrap;
-  }
+  .highlight {
+    .icon-gift {
+      margin-right: 2px;
+      top: 2px;
+    }
 
-  .icon {
-    font-size: 42px;
-    position: relative;
-    margin-right: 10px;
-  }
+    .icon-terminal {
+      margin-right: 6px;
+      top: 8px;
+    }
 
-  p {
-    text-align: justify;
-  }
-}
+    .icon-magic-wand {
+      margin-right: 6px;
+      top: 6px;
+    }
 
-.highlight {
-  .icon-gift {
-    margin-right: 2px;
-    top: 2px;
-  }
-
-  .icon-terminal {
-    margin-right: 6px;
-    top: 8px;
-  }
-
-  .icon-magic-wand {
-    margin-right: 6px;
-    top: 6px;
-  }
-
-  .icon-leaf {
-    top: 4px;
+    .icon-leaf {
+      top: 4px;
+    }
   }
 }
 
