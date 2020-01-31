@@ -15,7 +15,7 @@
 11
 12</pre>
     <pre class="code">
-<span class="yellow">pub struct</span> <span class="magenta">Buffer</span> {
+<span class="yellow">pub struct</span> <span class="magenta">Buffer</span> <span class="violet">{</span>
     <span class="yellow">pub</span> <span class="blue">id</span>: <span class="magenta">Option</span>&lt;<span class="magenta">usize</span>&gt;,
     <span class="highlight"><span class="blue">data</span>: <span class="magenta">Rc</span>&lt;<span class="magenta">RefCell</span>&lt;<span class="magenta">GapBuffer</span>&gt;&gt;,<span class="cursor">&vert;</span></span>
     <span class="yellow">pub</span> <span class="blue">path</span>: <span class="magenta">Option</span>&lt;<span class="magenta">PathBuf</span>&gt;,
@@ -23,10 +23,10 @@
     <span class="blue">history</span>: <span class="magenta">History</span>,
     <span class="blue">operation_group</span>: <span class="magenta">Option</span>&lt;<span class="magenta">OperationGroup</span>&gt;,
     <span class="yellow">pub</span> <span class="blue">syntax_definition</span>: <span class="magenta">Option</span>&lt;<span class="magenta">SyntaxDefinition</span>&gt;
-}
+<span class="violet">}</span>
 
-<span class="yellow">impl</span> <span class="magenta">Buffer</span> {
-    <span class="yellow">pub fn </span><span class="blue">new</span>() -> <span class="magenta">Buffer</span> {
+<span class="yellow">impl</span> <span class="magenta">Buffer</span> <span class="violet">{</span>
+    <span class="yellow">pub fn </span><span class="blue">new</span>() -> <span class="magenta">Buffer</span> <span class="violet">{</span>
 </pre>
     <pre class="mode"> INSERT </pre>
     <pre class="file-name"> amp.rs </pre>
