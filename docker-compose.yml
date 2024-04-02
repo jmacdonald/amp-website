@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  app:
+    build: .
+    ports:
+      - "4567:4567"
+    restart: on-failure
+    command: ["middleman", "server", "--bind-address", "0.0.0.0"]
+    volumes:
+      - .:/app
