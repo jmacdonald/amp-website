@@ -16,8 +16,12 @@ async function updateInstallLabels() {
     document.querySelectorAll(".install").forEach((element) => {
       element.textContent = `Install ${release.tag_name}`;
     });
+
+    document.querySelectorAll(".release-version").forEach((element) => {
+      element.textContent = release.tag_name;
+    });
   } catch {
-    // Static "Install" label remains useful when the release API is unavailable.
+    // Static labels remain useful when the release API is unavailable.
   }
 }
 

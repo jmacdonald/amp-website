@@ -56,13 +56,26 @@
               <span class="prompt__mark">$</span>
               <span>amp --about</span>
             </div>
-            <h1 id="hero-title">A complete text editor for your terminal.</h1>
-            <ul class="hero-output" aria-label="Amp attributes">
-              <li>modal editing inspired by Vim</li>
-              <li>fast movement, file finding, and symbol jump</li>
-              <li>lightweight Rust implementation</li>
-              <li>Nix flake included</li>
-            </ul>
+            <div class="about-output" id="hero-title">
+              <dl>
+                <div>
+                  <dt>version</dt>
+                  <dd class="release-version">latest</dd>
+                </div>
+                <div>
+                  <dt>type</dt>
+                  <dd>terminal text editor</dd>
+                </div>
+                <div>
+                  <dt>UX</dt>
+                  <dd>modal / Vim-inspired</dd>
+                </div>
+                <div>
+                  <dt>build</dt>
+                  <dd>Rust / Nix</dd>
+                </div>
+              </dl>
+            </div>
             <div class="prompt prompt--muted">
               <span class="prompt__mark">:</span>
               <span>install | docs | source</span>
