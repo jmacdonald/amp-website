@@ -109,7 +109,12 @@ h1 {
 .about-output dl {
   display: grid;
   gap: 0.42rem;
+  margin: 1rem 0 0;
+}
+
+.about-output p {
   margin: 0;
+  color: #e7ffe9;
 }
 
 .about-output div {
