@@ -53,14 +53,14 @@ svg {
 }
 
 .hero {
-  min-height: min(700px, 84vh);
+  min-height: min(660px, 78vh);
   display: grid;
   grid-template-columns: minmax(620px, 1.2fr) minmax(0, 0.8fr);
   align-items: center;
   gap: clamp(2rem, 4.6vw, 4.5rem);
   width: min(1180px, calc(100% - 48px));
   margin: 0 auto;
-  padding: clamp(2rem, 3.8vw, 3.6rem) 0 clamp(1.6rem, 2.8vw, 2.8rem);
+  padding: clamp(2rem, 3.8vw, 3.6rem) 0 clamp(1rem, 2vw, 2rem);
 }
 
 .hero__copy {
@@ -318,7 +318,7 @@ h1 {
 .features {
   width: min(1180px, calc(100% - 48px));
   margin: 0 auto;
-  padding: clamp(2.5rem, 5vw, 4.5rem) 0;
+  padding: clamp(1.75rem, 4vw, 3.4rem) 0;
 }
 
 .section-heading {
@@ -337,8 +337,8 @@ h1 {
 .section-heading h2 {
   margin: 0;
   color: #f5fff5;
-  font-size: clamp(2rem, 4vw, 3.2rem);
-  line-height: 1;
+  font-size: clamp(1.65rem, 3vw, 2.55rem);
+  line-height: 1.08;
 }
 
 .highlight-grid {
@@ -477,7 +477,7 @@ footer a {
 
   .hero {
     gap: 2rem;
-    padding-bottom: 2.75rem;
+    padding-bottom: 1.75rem;
   }
 
   .brand {
