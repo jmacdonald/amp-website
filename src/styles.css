@@ -140,22 +140,11 @@
 
   .editor {
     min-width: 0;
-    border: 1px solid rgba(247, 244, 239, 0.12);
-    border-radius: 8px;
+    border: 1px solid #93a1a1;
+    border-radius: 2px;
     overflow: hidden;
-    background: #202124;
-    box-shadow: 0 32px 90px rgba(0, 0, 0, 0.35);
-  }
-
-  .editor__meta {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 0.85rem 1rem;
-    border-bottom: 1px solid rgba(247, 244, 239, 0.08);
-    color: #d9d0c4;
-    font-family: var(--font-mono);
-    font-size: 0.82rem;
+    background: #222;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.32);
   }
 
   .content {
@@ -163,27 +152,27 @@
     display: grid;
     grid-template-columns: auto minmax(0, 1fr);
     grid-template-rows: minmax(0, 1fr) auto;
-    min-height: 500px;
     overflow: hidden;
     color: #f8f8f2;
     font-family: var(--font-mono);
-    font-size: clamp(0.72rem, 1.06vw, 0.92rem);
-    line-height: 1.75;
+    font-size: clamp(0.72rem, 1vw, 0.84rem);
+    line-height: 1.55;
   }
 
   .content pre {
     margin: 0;
-    padding-top: 1rem;
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
     white-space: pre;
     tab-size: 4;
   }
 
   .line-numbers {
     grid-row: 1;
-    padding-right: 0.85rem;
-    padding-left: 0.85rem;
-    background: #2e3035;
-    color: #7d8596;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    background: #333;
+    color: #93a1a1;
     text-align: right;
     user-select: none;
   }
@@ -191,14 +180,14 @@
   .code {
     min-width: 0;
     overflow-x: auto;
-    padding-right: 1.25rem;
-    padding-left: 1rem;
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
   }
 
   .highlight {
     display: inline-block;
     min-width: 100%;
-    background: rgba(139, 211, 178, 0.09);
+    background: #333;
   }
 
   .yellow {
@@ -228,10 +217,9 @@
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    min-height: 34px;
-    border-top: 1px solid rgba(247, 244, 239, 0.08);
-    background: #26282d;
-    font-size: 0.82rem;
+    background: #333;
+    font-size: inherit;
+    line-height: inherit;
   }
 
   .mode,
@@ -240,7 +228,8 @@
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 0 0.8rem;
+    padding: 0;
+    white-space: pre;
   }
 
   .mode {
@@ -251,7 +240,7 @@
 
   .file-name,
   .git-status {
-    color: #d9d0c4;
+    color: #f8f8f2;
   }
 
   .highlights,
@@ -426,9 +415,8 @@
     }
 
     .content {
-      min-height: 420px;
       font-size: 0.68rem;
-      line-height: 1.68;
+      line-height: 1.58;
     }
 
     .code {
