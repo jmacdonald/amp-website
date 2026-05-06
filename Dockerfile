@@ -1,23 +1,18 @@
-FROM ruby:2.5-slim
+FROM node:22-bookworm-slim
+
+ENV NPM_CONFIG_CACHE=/tmp/npm-cache
+
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends chromium ca-certificates fonts-liberation \
+  && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
-# Allow Bundler exception groups using a "without" build argument
-ARG without
-ENV BUNDLE_WITHOUT $without
+RUN mkdir -p /app/node_modules \
+  && chown -R node:node /app
 
-# System library dependencies
-RUN apt-get update && apt-get install -y build-essential nodejs git
+USER node
 
-# Add and install Ruby library dependencies
-ADD Gemfile* /app/
-RUN gem install bundler && bundle
+EXPOSE 5173
 
-# Middleman's server port
-EXPOSE 4567
-
-# LiveReload port
-EXPOSE 4568
-
-# Run the development server by default
-CMD middleman server
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]

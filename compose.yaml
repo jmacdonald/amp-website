@@ -1,0 +1,43 @@
+services:
+  setup:
+    build: .
+    working_dir: /app
+    user: "${UID:-1000}:${GID:-1000}"
+    command: ["npm", "ci", "--ignore-scripts"]
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+
+  dev:
+    build: .
+    working_dir: /app
+    user: "${UID:-1000}:${GID:-1000}"
+    command: ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+
+  build:
+    build: .
+    working_dir: /app
+    user: "${UID:-1000}:${GID:-1000}"
+    command: ["npm", "run", "build"]
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+
+  capture:
+    build: .
+    working_dir: /app
+    user: "${UID:-1000}:${GID:-1000}"
+    command: ["npm", "run", "capture"]
+    environment:
+      PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH: /usr/bin/chromium
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+
+volumes:
+  node_modules:

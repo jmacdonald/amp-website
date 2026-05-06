@@ -1,3 +1,0 @@
-#!/bin/bash
-
-docker run -it -v ${PWD}:/app -p 4567:4567 -p 4568:4568 middleman:amp
