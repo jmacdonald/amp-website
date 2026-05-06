@@ -83,47 +83,68 @@ svg {
   filter: invert(1) drop-shadow(0 0 14px rgba(98, 255, 142, 0.34));
 }
 
-.signal {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: clamp(1.3rem, 2.4vw, 2rem);
-  color: var(--color-green);
-  font-size: 0.74rem;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.signal span {
-  border: 1px solid rgba(98, 255, 142, 0.34);
-  background: rgba(98, 255, 142, 0.055);
-  padding: 0.35rem 0.5rem;
-  box-shadow: inset 0 0 0 1px rgba(8, 16, 12, 0.8);
+.hero-console {
+  max-width: 35rem;
+  border-left: 1px solid rgba(98, 255, 142, 0.44);
+  padding-left: 1rem;
 }
 
 h1 {
-  max-width: 13ch;
-  margin: 0;
+  max-width: 17ch;
+  margin: 0.8rem 0 0;
   color: #f5fff5;
-  font-size: clamp(2.65rem, 4.45vw, 4.35rem);
-  line-height: 0.98;
+  font-size: clamp(1.8rem, 3.2vw, 3.1rem);
+  line-height: 1.06;
   font-weight: 800;
   text-shadow: 0 0 26px rgba(98, 255, 142, 0.16);
 }
 
-.hero__copy p {
-  max-width: 38rem;
-  margin: 1.5rem 0 0;
+.prompt {
+  display: flex;
+  gap: 0.65rem;
+  color: var(--color-green);
+  font-size: clamp(0.92rem, 1.1vw, 1rem);
+  font-weight: 800;
+}
+
+.prompt__mark {
+  color: var(--color-cyan);
+}
+
+.prompt--muted {
+  margin-top: 1.2rem;
+  color: var(--color-dim);
+}
+
+.hero-output {
+  display: grid;
+  gap: 0.45rem;
+  margin: 1.35rem 0 0;
+  padding: 0;
   color: #b5c8ba;
-  font-size: 1.08rem;
-  line-height: 1.7;
+  font-size: clamp(0.98rem, 1.2vw, 1.08rem);
+  line-height: 1.55;
+  list-style: none;
+}
+
+.hero-output li {
+  position: relative;
+  padding-left: 1.4rem;
+}
+
+.hero-output li::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  color: var(--color-green);
+  font-weight: 800;
 }
 
 .actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .button {
@@ -421,8 +442,8 @@ footer a {
   }
 
   h1 {
-    max-width: 14ch;
-    font-size: clamp(2.6rem, 9.4vw, 4.4rem);
+    max-width: 17ch;
+    font-size: clamp(2rem, 7.4vw, 3.4rem);
   }
 
   .editor {
@@ -455,9 +476,17 @@ footer a {
     width: 68px;
   }
 
-  .hero__copy p {
-    font-size: 1rem;
-    line-height: 1.55;
+  .hero-console {
+    padding-left: 0.8rem;
+  }
+
+  h1 {
+    font-size: clamp(1.95rem, 9vw, 3rem);
+  }
+
+  .hero-output {
+    font-size: 0.96rem;
+    line-height: 1.5;
   }
 
   .actions {

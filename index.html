@@ -51,17 +51,23 @@
           <a class="brand" href="/" aria-label="Amp home">
             <img class="brand__mark" src="/logo.svg" alt="" />
           </a>
-          <div class="signal" aria-label="Project signals">
-            <span>vim-inspired</span>
-            <span>rust</span>
-            <span>nix flake</span>
+          <div class="hero-console" aria-labelledby="hero-title">
+            <div class="prompt">
+              <span class="prompt__mark">$</span>
+              <span>amp --about</span>
+            </div>
+            <h1 id="hero-title">A complete text editor for your terminal.</h1>
+            <ul class="hero-output" aria-label="Amp attributes">
+              <li>modal editing inspired by Vim</li>
+              <li>fast movement, file finding, and symbol jump</li>
+              <li>lightweight Rust implementation</li>
+              <li>Nix flake included</li>
+            </ul>
+            <div class="prompt prompt--muted">
+              <span class="prompt__mark">:</span>
+              <span>install | docs | source</span>
+            </div>
           </div>
-          <h1>A complete text editor for your terminal.</h1>
-          <p>
-            Modal, keyboard-driven editing with the essentials built in:
-            fast file finding, precise movement, symbol jump, and flexible
-            YAML keymaps.
-          </p>
           <div class="actions" aria-label="Primary actions">
             <a class="button button--primary" href="https://amp.rs/docs/installation">
               <svg aria-hidden="true" viewBox="0 0 24 24">
