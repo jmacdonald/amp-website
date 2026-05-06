@@ -1,12 +1,26 @@
 :root {
-  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-mono: "Fira Code", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-  --color-ink: #101116;
-  --color-paper: #f7f4ef;
-  --color-rust: #b64f2a;
-  --color-mint: #8bd3b2;
-  --color-editor: #202124;
-  --color-editor-line: #2e3035;
+  --font-mono: "ShureTechMono Nerd Font", "ShureTechMonoNerdFont", "Fira Code", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --color-ink: #060807;
+  --color-paper: #e7ffe9;
+  --color-dim: #89a894;
+  --color-green: #62ff8e;
+  --color-cyan: #5cecff;
+  --color-pink: #ff4f9a;
+  --color-amber: #ffd166;
+  --color-panel: #0b100d;
+  --color-panel-2: #101711;
+  --color-line: rgba(98, 255, 142, 0.22);
+}
+
+@font-face {
+  font-family: "ShureTechMono Nerd Font";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src:
+    url("/fonts/ShureTechMonoNerdFont-Regular.ttf") format("truetype"),
+    local("ShureTechMono Nerd Font"),
+    local("ShureTechMonoNerdFont-Regular");
 }
 
 * {
@@ -14,15 +28,19 @@
 }
 
 html {
-  background: #101116;
+  background: var(--color-ink);
 }
 
 body {
   min-width: 320px;
   margin: 0;
-  color: #f7f4ef;
-  background: linear-gradient(180deg, #161b1c 0%, #101116 58%, #101116 100%);
-  font-family: var(--font-sans);
+  color: var(--color-paper);
+  background:
+    linear-gradient(rgba(98, 255, 142, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(98, 255, 142, 0.025) 1px, transparent 1px),
+    linear-gradient(180deg, #08100c 0%, #050706 56%, #050706 100%);
+  background-size: 100% 4px, 64px 64px, auto;
+  font-family: var(--font-mono);
 }
 
 a {
@@ -35,14 +53,14 @@ svg {
 }
 
 .hero {
-  min-height: min(720px, 86vh);
+  min-height: min(700px, 84vh);
   display: grid;
   grid-template-columns: minmax(620px, 1.2fr) minmax(0, 0.8fr);
   align-items: center;
-  gap: clamp(2rem, 5vw, 5rem);
+  gap: clamp(2rem, 4.6vw, 4.5rem);
   width: min(1180px, calc(100% - 48px));
   margin: 0 auto;
-  padding: clamp(2rem, 4vw, 4rem) 0 clamp(1.75rem, 3vw, 3rem);
+  padding: clamp(2rem, 3.8vw, 3.6rem) 0 clamp(1.6rem, 2.8vw, 2.8rem);
 }
 
 .hero__copy {
@@ -54,7 +72,7 @@ svg {
   display: inline-flex;
   align-items: center;
   gap: 0.9rem;
-  margin-bottom: clamp(1.7rem, 3.2vw, 2.8rem);
+  margin-bottom: 1.25rem;
   font-size: 1.25rem;
   font-weight: 700;
 }
@@ -62,21 +80,41 @@ svg {
 .brand__mark {
   width: 86px;
   height: auto;
-  filter: invert(1);
+  filter: invert(1) drop-shadow(0 0 14px rgba(98, 255, 142, 0.34));
+}
+
+.signal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: clamp(1.3rem, 2.4vw, 2rem);
+  color: var(--color-green);
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.signal span {
+  border: 1px solid rgba(98, 255, 142, 0.34);
+  background: rgba(98, 255, 142, 0.055);
+  padding: 0.35rem 0.5rem;
+  box-shadow: inset 0 0 0 1px rgba(8, 16, 12, 0.8);
 }
 
 h1 {
   max-width: 13ch;
   margin: 0;
-  font-size: clamp(2.8rem, 4.7vw, 4.55rem);
+  color: #f5fff5;
+  font-size: clamp(2.65rem, 4.45vw, 4.35rem);
   line-height: 0.98;
   font-weight: 800;
+  text-shadow: 0 0 26px rgba(98, 255, 142, 0.16);
 }
 
 .hero__copy p {
   max-width: 38rem;
   margin: 1.5rem 0 0;
-  color: #d9d0c4;
+  color: #b5c8ba;
   font-size: 1.08rem;
   line-height: 1.7;
 }
@@ -95,31 +133,32 @@ h1 {
   gap: 0.55rem;
   min-height: 44px;
   padding: 0 1rem;
-  border: 1px solid rgba(247, 244, 239, 0.2);
-  border-radius: 8px;
-  background: rgba(247, 244, 239, 0.06);
-  color: #f7f4ef;
+  border: 1px solid rgba(92, 236, 255, 0.28);
+  border-radius: 2px;
+  background: rgba(92, 236, 255, 0.045);
+  color: var(--color-paper);
   font-weight: 700;
   transition: border-color 160ms ease, background-color 160ms ease, transform 160ms ease;
 }
 
 .button:hover,
 .button:focus-visible {
-  border-color: rgba(139, 211, 178, 0.8);
-  background: rgba(139, 211, 178, 0.12);
+  border-color: rgba(98, 255, 142, 0.84);
+  background: rgba(98, 255, 142, 0.11);
   transform: translateY(-1px);
 }
 
 .button--primary {
-  border-color: #8bd3b2;
-  background: #8bd3b2;
-  color: #101116;
+  border-color: var(--color-green);
+  background: var(--color-green);
+  color: #061009;
+  box-shadow: 0 0 24px rgba(98, 255, 142, 0.18);
 }
 
 .button--primary:hover,
 .button--primary:focus-visible {
-  background: #9fe5c5;
-  color: #101116;
+  background: #8dffad;
+  color: #061009;
 }
 
 .button svg {
@@ -135,11 +174,14 @@ h1 {
 
 .editor {
   min-width: 0;
-  border: 1px solid #93a1a1;
+  border: 1px solid rgba(98, 255, 142, 0.58);
   border-radius: 2px;
   overflow: hidden;
-  background: #222;
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.32);
+  background: #080b09;
+  box-shadow:
+    0 0 0 1px rgba(92, 236, 255, 0.12),
+    0 24px 70px rgba(0, 0, 0, 0.55),
+    0 0 42px rgba(98, 255, 142, 0.12);
 }
 
 .content {
@@ -148,7 +190,7 @@ h1 {
   grid-template-columns: auto minmax(0, 1fr);
   grid-template-rows: minmax(0, 1fr) auto;
   overflow: hidden;
-  color: #f8f8f2;
+  color: #eaffeb;
   font-family: var(--font-mono);
   font-size: clamp(0.72rem, 1vw, 0.84rem);
   line-height: 1.55;
@@ -166,8 +208,8 @@ h1 {
   grid-row: 1;
   padding-right: 0.75rem;
   padding-left: 0.75rem;
-  background: #333;
-  color: #93a1a1;
+  background: #0e1510;
+  color: #5f7e69;
   text-align: right;
   user-select: none;
 }
@@ -182,28 +224,28 @@ h1 {
 .highlight {
   display: inline-block;
   min-width: 100%;
-  background: #333;
+  background: rgba(98, 255, 142, 0.12);
 }
 
 .yellow {
-  color: #e6db74;
+  color: var(--color-amber);
 }
 
 .magenta {
-  color: #f92672;
+  color: var(--color-pink);
 }
 
 .blue {
-  color: #66d9ef;
+  color: var(--color-cyan);
 }
 
 .violet {
-  color: #9b8cff;
+  color: #b18cff;
 }
 
 .cursor {
   animation: blink 1.4s steps(1, end) infinite;
-  color: #8bd3b2;
+  color: var(--color-green);
   font-weight: 800;
 }
 
@@ -212,7 +254,7 @@ h1 {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  background: #333;
+  background: #111812;
   font-size: inherit;
   line-height: inherit;
 }
@@ -228,14 +270,14 @@ h1 {
 }
 
 .mode {
-  background: #a6e22e;
-  color: #101116;
+  background: var(--color-green);
+  color: #061009;
   font-weight: 800;
 }
 
 .file-name,
 .git-status {
-  color: #f8f8f2;
+  color: #eaffeb;
 }
 
 .highlights,
@@ -252,16 +294,15 @@ h1 {
 
 .section-heading p {
   margin: 0 0 0.45rem;
-  color: #8bd3b2;
+  color: var(--color-green);
   font-size: 0.78rem;
   font-weight: 800;
-  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 .section-heading h2 {
   margin: 0;
-  color: #f7f4ef;
+  color: #f5fff5;
   font-size: clamp(2rem, 4vw, 3.2rem);
   line-height: 1;
 }
@@ -274,9 +315,11 @@ h1 {
 
 .highlight-grid article,
 .feature-list article {
-  border: 1px solid rgba(247, 244, 239, 0.12);
-  border-radius: 8px;
-  background: rgba(247, 244, 239, 0.045);
+  border: 1px solid var(--color-line);
+  border-radius: 2px;
+  background:
+    linear-gradient(180deg, rgba(98, 255, 142, 0.055), rgba(92, 236, 255, 0.025)),
+    rgba(5, 9, 7, 0.9);
   padding: 1.1rem;
 }
 
@@ -285,7 +328,7 @@ h1 {
   height: 28px;
   margin-bottom: 1rem;
   fill: none;
-  stroke: #8bd3b2;
+  stroke: var(--color-cyan);
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -294,30 +337,30 @@ h1 {
 .highlight-grid h3,
 .feature-list h3 {
   margin: 0;
-  color: #fff;
+  color: #f5fff5;
   font-size: 1.05rem;
 }
 
 .highlight-grid p,
 .feature-list p {
   margin: 0.65rem 0 0;
-  color: #d9d0c4;
+  color: #b5c8ba;
   line-height: 1.6;
 }
 
 .highlight-grid p a,
 .feature-list p a {
-  color: #8bd3b2;
+  color: var(--color-green);
   font-weight: 700;
 }
 
 .highlight-grid p a:hover,
 .feature-list p a:hover {
-  color: #9fe5c5;
+  color: #8dffad;
 }
 
 .features {
-  border-top: 1px solid rgba(247, 244, 239, 0.1);
+  border-top: 1px solid var(--color-line);
 }
 
 .feature-list {
@@ -333,13 +376,13 @@ footer {
   width: min(1180px, calc(100% - 48px));
   margin: 0 auto;
   padding: 2rem 0 3rem;
-  border-top: 1px solid rgba(247, 244, 239, 0.1);
-  color: #a8a197;
+  border-top: 1px solid var(--color-line);
+  color: var(--color-dim);
   font-size: 0.92rem;
 }
 
 footer a {
-  color: #8bd3b2;
+  color: var(--color-green);
   font-weight: 700;
 }
 
@@ -389,7 +432,7 @@ footer a {
   }
 
   .brand {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
   }
 
   .brand__mark {
