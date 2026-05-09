@@ -138,20 +138,67 @@
         </div>
         <div class="feature-list">
           <article>
-            <h3>File Finder</h3>
-            <p>Quickly indexes and finds files using a simple, accurate matching algorithm. Ignores git directories by default; easily configurable to your own liking, if you must.</p>
+            <div class="feature-copy">
+              <p class="feature-kicker">01</p>
+              <h3>File Finder</h3>
+              <p>Quickly indexes and finds files using a simple, accurate matching algorithm. Ignores git directories by default; easily configurable to your own liking, if you must.</p>
+            </div>
+            <div class="feature-demo" aria-label="File finder preview">
+              <pre><span class="prompt__mark">&gt;</span> src/main
+
+src/main.js
+src/styles.css
+scripts/capture.mjs
+public/logo.svg</pre>
+            </div>
           </article>
           <article>
-            <h3>Easy Movement</h3>
-            <p>Fast, precise cursor movement without repetitive keystrokes or fancy expressions. Look where you'd like to move, and type the token. That's it.</p>
+            <div class="feature-copy">
+              <p class="feature-kicker">02</p>
+              <h3>Easy Movement</h3>
+              <p>Fast, precise cursor movement without repetitive keystrokes or fancy expressions. Look where you'd like to move, and type the token. That's it.</p>
+            </div>
+            <div class="feature-demo feature-demo--player">
+              <div
+                class="asciicast-embed"
+                data-cast-src="/demo.cast"
+                data-loop
+              ></div>
+              <noscript>Enable JavaScript to view the Easy Movement terminal demo.</noscript>
+            </div>
           </article>
           <article>
-            <h3>Symbol Jump</h3>
-            <p>Move to any class, struct, or method definition within the current buffer. Easily augment the default set of supported languages using the .sublime-syntax format.</p>
+            <div class="feature-copy">
+              <p class="feature-kicker">03</p>
+              <h3>Symbol Jump</h3>
+              <p>Move to any class, struct, or method definition within the current buffer. Easily augment the default set of supported languages using the .sublime-syntax format.</p>
+            </div>
+            <div class="feature-demo" aria-label="Symbol jump preview">
+              <pre>Buffer
+  new()
+  from_file()
+  save()
+
+Cursor
+  move_to()
+  range()</pre>
+            </div>
           </article>
           <article>
-            <h3>Flexible Keymaps</h3>
-            <p>Simple YAML-based key mappings with the ability to compose multiple built-in commands into new, custom macros.</p>
+            <div class="feature-copy">
+              <p class="feature-kicker">04</p>
+              <h3>Flexible Keymaps</h3>
+              <p>Simple YAML-based key mappings with the ability to compose multiple built-in commands into new, custom macros.</p>
+            </div>
+            <div class="feature-demo" aria-label="Keymap preview">
+              <pre>normal:
+  C-s:
+    - save
+  space f:
+    - find_file
+  space s:
+    - symbol_jump</pre>
+            </div>
           </article>
         </div>
       </section>
