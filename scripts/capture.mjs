@@ -39,7 +39,7 @@ try {
     await page.goto("http://127.0.0.1:4174", { waitUntil: "networkidle" });
     await page.screenshot({
       path: join(screenshotDir, capture.name),
-      fullPage: false,
+      fullPage: true,
     });
     await page.close();
   }
