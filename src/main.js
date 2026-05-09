@@ -3,6 +3,8 @@ import "asciinema-player/dist/bundle/asciinema-player.css";
 import * as AsciinemaPlayer from "asciinema-player";
 
 const releaseUrl = "https://api.github.com/repos/jmacdonald/amp/releases/latest";
+const terminalFontFamily =
+  '"ShureTechMono Nerd Font", "ShureTechMonoNerdFont", "Fira Code", "SFMono-Regular", Consolas, "Liberation Mono", monospace';
 
 async function updateInstallLabels() {
   try {
@@ -36,6 +38,7 @@ function createAsciicastPlayer(element) {
     autoPlay: false,
     controls: false,
     loop: element.hasAttribute("data-loop"),
+    terminalFontFamily,
   });
 
   return element.asciicastPlayer;
