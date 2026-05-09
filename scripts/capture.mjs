@@ -19,6 +19,21 @@ const server = await createServer({
 
 await server.listen(4174);
 
+async function scrollThroughPage(page) {
+  await page.evaluate(async () => {
+    const delay = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
+    const viewportHeight = window.innerHeight;
+    const maxScroll = document.documentElement.scrollHeight - viewportHeight;
+
+    for (let scrollY = 0; scrollY <= maxScroll; scrollY += viewportHeight * 0.75) {
+      window.scrollTo(0, scrollY);
+      await delay(120);
+    }
+
+    window.scrollTo(0, 0);
+  });
+}
+
 const browser = await chromium.launch({
   executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || "/usr/bin/chromium",
   args: ["--no-sandbox", "--disable-dev-shm-usage"],
@@ -37,6 +52,7 @@ try {
     });
 
     await page.goto("http://127.0.0.1:4174", { waitUntil: "networkidle" });
+    await scrollThroughPage(page);
     await page.screenshot({
       path: join(screenshotDir, capture.name),
       fullPage: true,
