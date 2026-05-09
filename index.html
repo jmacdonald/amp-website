@@ -132,29 +132,25 @@
       </section>
 
       <section class="features" aria-labelledby="features-title">
-        <div class="section-heading">
-          <p>// core workflows</p>
-          <h2 id="features-title">No plug-ins, zero configuration.</h2>
-        </div>
+        <h2 id="features-title">Features</h2>
         <div class="feature-list">
           <article>
             <div class="feature-copy">
-              <p class="feature-kicker">01</p>
-              <h3>File Finder</h3>
-              <p>Quickly indexes and finds files using a simple, accurate matching algorithm. Ignores git directories by default; easily configurable to your own liking, if you must.</p>
+              <p class="feature-kicker">// 01</p>
+              <h3>Syntax Highlighting</h3>
+              <p>Readable highlighting for the languages and formats you work in, with themes that can change the editor's entire mood without changing how it works.</p>
             </div>
-            <div class="feature-demo" aria-label="File finder preview">
-              <pre><span class="prompt__mark">&gt;</span> src/main
-
-src/main.js
-src/styles.css
-scripts/capture.mjs
-public/logo.svg</pre>
+            <div class="feature-demo" aria-label="Syntax highlighting and theming preview">
+              <div
+                class="asciicast-embed"
+                data-cast-src="/demo.cast"
+                data-loop
+              ></div>
             </div>
           </article>
           <article>
             <div class="feature-copy">
-              <p class="feature-kicker">02</p>
+              <p class="feature-kicker">// 02</p>
               <h3>Easy Movement</h3>
               <p>Fast, precise cursor movement without repetitive keystrokes or fancy expressions. Look where you'd like to move, and type the token. That's it.</p>
             </div>
@@ -169,35 +165,30 @@ public/logo.svg</pre>
           </article>
           <article>
             <div class="feature-copy">
-              <p class="feature-kicker">03</p>
-              <h3>Symbol Jump</h3>
-              <p>Move to any class, struct, or method definition within the current buffer. Easily augment the default set of supported languages using the .sublime-syntax format.</p>
+              <p class="feature-kicker">// 03</p>
+              <h3>Fuzzy Finder</h3>
+              <p>Find files quickly from inside Amp, or hand that workflow to terminal file managers like <a href="https://yazi-rs.github.io">yazi</a> and <a href="https://midnight-commander.org">Midnight Commander</a> when you want a full browser.</p>
             </div>
-            <div class="feature-demo" aria-label="Symbol jump preview">
-              <pre>Buffer
-  new()
-  from_file()
-  save()
-
-Cursor
-  move_to()
-  range()</pre>
+            <div class="feature-demo" aria-label="Fuzzy finder and file manager preview">
+              <div
+                class="asciicast-embed"
+                data-cast-src="/demo.cast"
+                data-loop
+              ></div>
             </div>
           </article>
           <article>
             <div class="feature-copy">
-              <p class="feature-kicker">04</p>
+              <p class="feature-kicker">// 04</p>
               <h3>Flexible Keymaps</h3>
               <p>Simple YAML-based key mappings with the ability to compose multiple built-in commands into new, custom macros.</p>
             </div>
             <div class="feature-demo" aria-label="Keymap preview">
-              <pre>normal:
-  C-s:
-    - save
-  space f:
-    - find_file
-  space s:
-    - symbol_jump</pre>
+              <div
+                class="asciicast-embed"
+                data-cast-src="/demo.cast"
+                data-loop
+              ></div>
             </div>
           </article>
         </div>
