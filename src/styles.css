@@ -226,7 +226,7 @@ h1 {
   overflow: hidden;
   color: #eaffeb;
   font-family: var(--font-mono);
-  font-size: clamp(0.72rem, 1vw, 0.84rem);
+  font-size: clamp(0.8rem, 1.08vw, 0.95rem);
   line-height: 1.55;
 }
 
@@ -234,6 +234,7 @@ h1 {
   margin: 0;
   padding-top: 0.65rem;
   padding-bottom: 0.65rem;
+  font-family: inherit;
   white-space: pre;
   tab-size: 4;
 }
@@ -638,7 +639,7 @@ footer a {
   }
 
   .content {
-    font-size: 0.68rem;
+    font-size: 0.76rem;
     line-height: 1.58;
   }
 
