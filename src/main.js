@@ -17,10 +17,6 @@ async function updateInstallLabels() {
     const release = await response.json();
     if (!release.tag_name) return;
 
-    document.querySelectorAll(".install").forEach((element) => {
-      element.textContent = `Install ${release.tag_name}`;
-    });
-
     document.querySelectorAll(".release-version").forEach((element) => {
       element.textContent = release.tag_name;
     });
