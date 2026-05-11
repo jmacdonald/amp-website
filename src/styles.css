@@ -10,6 +10,8 @@
   --color-panel: #0b100d;
   --color-panel-2: #101711;
   --color-line: rgba(98, 255, 142, 0.22);
+  --color-editor-gutter: #0e1510;
+  --color-editor-highlight: #112317;
 }
 
 @font-face {
@@ -241,25 +243,38 @@ h1 {
 
 .line-numbers {
   grid-row: 1;
-  padding-right: 0.75rem;
-  padding-left: 0.75rem;
-  background: #0e1510;
+  padding-right: 0;
+  padding-left: 0;
+  background: var(--color-editor-gutter);
   color: #5f7e69;
   text-align: right;
   user-select: none;
 }
 
+.line-numbers span {
+  display: block;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+.line-numbers .line-highlight {
+  background: var(--color-editor-highlight);
+}
+
 .code {
   min-width: 0;
-  overflow-x: auto;
+  overflow: hidden;
   padding-right: 0.8rem;
-  padding-left: 0.8rem;
+  padding-left: 10px;
 }
 
 .highlight {
   display: inline-block;
-  min-width: 100%;
-  background: rgba(98, 255, 142, 0.12);
+  width: calc(100% + 21px);
+  box-sizing: border-box;
+  margin-left: -10px;
+  padding-left: 10px;
+  background: var(--color-editor-highlight);
 }
 
 .yellow {
@@ -645,12 +660,15 @@ footer a {
 
   .code {
     padding-right: 0.9rem;
-    padding-left: 0.75rem;
   }
 
-  .line-numbers {
+  .line-numbers .line-highlight {
     padding-right: 0.55rem;
     padding-left: 0.55rem;
+  }
+
+  .highlight {
+    padding-left: 10px;
   }
 
   .highlight-grid,
