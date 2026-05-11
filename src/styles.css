@@ -467,10 +467,6 @@ h1 {
   grid-row: 1;
 }
 
-.feature-list article:last-child {
-  border-bottom: 1px solid var(--color-line);
-}
-
 .feature-copy {
   align-self: center;
   min-width: 0;
