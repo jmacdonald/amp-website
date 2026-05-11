@@ -33,6 +33,7 @@ function createAsciicastPlayer(element) {
   element.asciicastPlayer = AsciinemaPlayer.create(src, element, {
     autoPlay: false,
     controls: false,
+    fit: "width",
     loop: element.hasAttribute("data-loop"),
     terminalFontFamily,
   });

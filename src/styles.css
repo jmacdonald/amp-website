@@ -510,16 +510,23 @@ h1 {
 }
 
 .asciicast-embed {
+  width: 100%;
   min-height: 100%;
 }
 
 .feature-demo--player iframe,
-.feature-demo--player .asciinema-player {
+.feature-demo--player .asciinema-player,
+.feature-demo .asciinema-player {
   display: block;
   width: 100%;
   max-width: 100%;
   height: auto;
   margin: 0;
+}
+
+.feature-demo .asciinema-player-wrapper,
+.feature-demo .asciinema-terminal {
+  width: 100%;
 }
 
 .feature-demo--player noscript {
