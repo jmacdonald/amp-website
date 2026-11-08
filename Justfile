@@ -7,7 +7,10 @@ setup:
     {{compose}} run --rm setup
 
 start:
-    {{compose}} up dev
+    {{compose}} up -d dev
+
+stop:
+    {{compose}} down
 
 build:
     {{compose}} run --rm build
