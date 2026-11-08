@@ -6,7 +6,7 @@ setup:
     # npm ci --ignore-scripts because Chromium is supplied by the Docker image.
     {{compose}} run --rm setup
 
-serve:
+start:
     {{compose}} up dev
 
 build:
